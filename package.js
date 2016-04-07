@@ -10,7 +10,7 @@ Package.describe({
 Package.onUse(function(api) {
   api.versionsFrom('1.0');
 
-  api.use(['templating','reactive-dict','tracker'], 'client');
+  api.use(['templating'], 'client');
   api.use('constellation:console@1.4.0', 'client');
 
   api.addFiles('connection.css','client');
