@@ -20,7 +20,7 @@ Constellation.registerCallbacks({
   }
 });
 
-Template.Constellation_tiny.helpers({
+Template.Constellation_connection.helpers({
   connection: function () {
     return Meteor.status().connected;  
   }
