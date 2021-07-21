@@ -1,6 +1,6 @@
 Package.describe({
   name: 'constellation:connection',
-  version: '0.4.7',
+  version: '0.4.10',
   summary: 'Connection status plugin for Constellation',
   git: 'https://github.com/JackAdams/constellation-connection.git',
   documentation: 'README.md',
@@ -8,10 +8,10 @@ Package.describe({
 });
 
 Package.onUse(function(api) {
-  api.versionsFrom('1.0');
+  api.versionsFrom('1.8.2');
 
-  api.use(['templating'], 'client');
-  api.use('constellation:console@1.4.7', 'client');
+  api.use('templating@1.3.2', 'client');
+  api.use('constellation:console@1.4.10', 'client');
 
   api.addFiles('connection.css','client');
   api.addFiles('connection.html','client');
